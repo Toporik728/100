@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 причин любить Настю</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #FF69B4;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-bottom-left-radius: 50% 20px;
+            border-bottom-right-radius: 50% 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            font-family: 'Georgia', serif;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        main {
+            padding: 30px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Стили для признаний */
+        li.reason {
+            background-color: #FFF;
+            margin: 20px 0;
+            padding: 20px;
+            font-size: 1.6em;
+            color: #FF1493;
+            border-radius: 15px;
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        li.reason::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 6px;
+            background: linear-gradient(45deg, #FF69B4, #FFD700);
+        }
+
+        li.reason:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Чередование цветов для признаний */
+        li:nth-child(odd) {
+            background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+        }
+
+        li:nth-child(even) {
+            background: linear-gradient(135deg, #FFFDE1 0%, #FFA8A8 100%);
+        }
+
+        /* Анимация плавного появления */
+        li {
+            opacity: 0;
+            animation: fadeIn 0.8s forwards;
+        }
+
+        li:nth-child(odd) {
+            animation-delay: 0.3s;
+        }
+
+        li:nth-child(even) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Стили для галереи */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: #FF69B4;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Стили для мобильных устройств */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            li.reason {
+                font-size: 1.3em;
+            }
+
+            .gallery img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>100 причин, почему я люблю Настю</h1>
+    </header>
+
+    <main>
+        <ul id="reasons-list">
+            <li class="reason">Ты всегда меня поддерживаешь.</li>
+            <li class="reason">Твой смех заразителен.</li>
+            <li class="reason">Ты умеешь находить позитив в любой ситуации.</li>
+            <li class="reason">Ты вдохновляешь меня быть лучше.</li>
+            <li class="reason">Твоя доброта меня поражает.</li>
+            <li class="reason">Ты всегда знаешь, как поднять мне настроение.</li>
+            <li class="reason">Ты прекрасно готовишь.</li>
+            <li class="reason">Твой стиль просто невероятный.</li>
+            <li class="reason">Ты искренне заботишься о других.</li>
+            <li class="reason">Ты всегда готова помочь мне в трудную минуту.</li>
+            <li class="reason">Ты умеешь слушать.</li>
+            <li class="reason">Ты всегда находишь время для нас.</li>
+            <li class="reason">Ты приносишь радость в мою жизнь.</li>
+            <li class="reason">Твое чувство юмора делает каждый день ярче.</li>
+            <li class="reason">Ты умеешь удивлять.</li>
+            <li class="reason">Твоя улыбка всегда поднимает настроение.</li>
+            <li class="reason">Ты — моя лучшая подруга.</li>
+            <li class="reason">Ты заставляешь меня чувствовать себя любимым.</li>
+            <li class="reason">Ты понимаешь меня без слов.</li>
+            <li class="reason">Ты делаешь меня счастливым.</li>
+            <li class="reason">Ты вдохновляешь меня на новые достижения.</li>
+            <li class="reason">Ты невероятно талантлива.</li>
+            <li class="reason">Ты умеешь создавать уют.</li>
+            <li class="reason">Ты любишь приключения так же, как и я.</li>
+            <li class="reason">Твое терпение удивляет меня.</li>
+            <li class="reason">Ты всегда остаешься верной себе.</li>
+            <li class="reason">Ты любишь животных, и это очень мило.</li>
+            <li class="reason">Ты поддерживаешь мои мечты и амбиции.</li>
+            <li class="reason">Ты красива как внутри, так и снаружи.</li>
+            <li class="reason">Ты всегда готова выслушать мои переживания.</li>
+            <li class="reason">Ты не боишься быть собой.</li>
+            <li class="reason">Ты мой самый надежный друг.</li>
+            <li class="reason">Ты умеешь делать каждый день особенным.</li>
+            <li class="reason">Ты любишь проводить время на природе.</li>
+            <li class="reason">Ты всегда поднимаешь мой дух.</li>
+            <li class="reason">Ты умеешь находить общий язык с людьми.</li>
+            <li class="reason">Ты вдохновляешь меня своей смелостью.</li>
+            <li class="reason">Ты всегда готова порадовать меня чем-то вкусным.</li>
+            <li class="reason">Ты создаешь невероятные воспоминания.</li>
+            <li class="reason">Ты умеешь делиться своей энергией.</li>
+            <li class="reason">Ты делаешь каждый момент незабываемым.</li>
+            <li class="reason">Ты всегда находишь светлую сторону.</li>
+            <li class="reason">Ты — самый тёплый и искренний человек.</li>
+            <li class="reason">Твои глаза сияют, когда ты смеешься.</li>
+            <li class="reason">Ты всегда помнишь мелочи, которые важны для меня.</li>
+            <li class="reason">Ты — моя муза.</li>
+            <li class="reason">Ты даешь мне силы преодолевать любые трудности.</li>
+            <li class="reason">Ты умеешь быть сильной и нежной одновременно.</li>
+            <li class="reason">Ты учишь меня любить жизнь такой, какая она есть.</li>
+            <li class="reason">Твой оптимизм всегда поднимает мне настроение.</li>
+            <li class="reason">Ты делаешь меня лучше каждый день.</li>
+            <li class="reason">Ты поддерживаешь меня, даже когда я сам в себе сомневаюсь.</li>
+            <li class="reason">Ты приносишь гармонию в мою жизнь.</li>
+            <li class="reason">Ты всегда делаешь мою жизнь ярче.</li>
+            <li class="reason">Ты умная и образованная.</li>
+            <li class="reason">Ты прекрасный собеседник.</li>
+            <li class="reason">Ты умеешь дарить любовь без слов.</li>
+            <li class="reason">Ты показываешь мне, что такое настоящая любовь.</li>
+            <li class="reason">Ты делаешь меня счастливым просто тем, что ты есть.</li>
+            <li class="reason">Ты — причина, почему я улыбаюсь каждый день.</li>
+            <li class="reason">Твоя улыбка освещает всё вокруг.</li>
+            <li class="reason">Ты умеешь удивлять меня каждый раз.</li>
+            <li class="reason">Ты всегда поддерживаешь мои идеи.</li>
+            <li class="reason">Ты делаешь каждый наш день особенным.</li>
+            <li class="reason">Ты всегда заботишься обо мне.</li>
+            <li class="reason">Ты понимаешь меня лучше, чем кто-либо.</li>
+            <li class="reason">Ты — самый ценный человек в моей жизни.</li>
+            <li class="reason">Ты всегда знаешь, как меня успокоить.</li>
+            <li class="reason">Ты любишь меня таким, какой я есть.</li>
+            <li class="reason">Ты делаешь меня сильнее.</li>
+            <li class="reason">Ты всегда вдохновляешь меня на новые свершения.</li>
+            <li class="reason">Ты заботишься о моей душе и сердце.</li>
+            <li class="reason">Ты умеешь быть мягкой и решительной одновременно.</li>
+            <li class="reason">Ты учишь меня новому каждый день.</li>
+            <li class="reason">Ты — моё самое любимое приключение.</li>
+            <li class="reason">Ты наполняешь мою жизнь смыслом.</li>
+            <li class="reason">Ты делаешь мою жизнь полной.</li>
+            <li class="reason">Ты — самое лучшее, что случилось в моей жизни.</li>
+            <li class="reason">Ты заставляешь меня любить себя больше.</li>
+            <li class="reason">Ты показываешь мне, что такое истинная доброта.</li>
+            <li class="reason">Ты — мое вдохновение каждый день.</li>
+            <li class="reason">Ты делаешь этот мир лучше.</li>
+            <li class="reason">Ты — это всё, о чём я мечтал.</li>
+            <li class="reason">Ты всегда находишь способ меня удивить.</li>
+            <li class="reason">Ты обладаешь невероятной внутренней силой.</li>
+            <li class="reason">Ты — человек, с которым я хочу быть всегда.</li>
+            <li class="reason">Ты даешь мне уверенность в завтрашнем дне.</li>
+            <li class="reason">Ты делаешь мой мир ярче и добрее.</li>
+            <li class="reason">Ты — самая удивительная девушка на свете.</li>
+            <li class="reason">Ты — лучшее, что есть в моей жизни.</li>
+            <li class="reason">Ты даришь мне чувство настоящей любви.</li>
+            <li class="reason">Ты делаешь меня счастливым каждый день.</li>
+        </ul>
+
+        <!-- Фотогалерея -->
+        <section class="gallery">
+            <img src="photo1.jpg" alt="Фото 1">
+            <img src="photo2.jpg" alt="Фото 2">
+            <img src="photo3.jpg" alt="Фото 3">
+            <img src="photo4.jpg" alt="Фото 4">
+            <img src="photo5.jpg" alt="Фото 5">
+            <img src="photo6.jpg" alt="Фото 6">
+        </section>
+    </main>
+
+    <footer>
+        <p>С любовью, всегда рядом.</p>
+    </footer>
+</body>
+</html>
+
